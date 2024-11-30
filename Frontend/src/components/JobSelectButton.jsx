@@ -1,16 +1,24 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import styles from './JobSelectButton.module.css';
 
-const JobSelectButton = ({ children, color = '', ...rest }) => {
+const JobSelectButton = ({ as, color = '', children, ...rest }) => {
+  let Component;
+
+  if (as === 'link') Component = Link;
+  else if (as === 'a') Component = 'a';
+  else Component = 'button';
+
   return (
-    <button className={`${styles['job-select-button']} ${styles[color]}`} {...rest}>
-      {children}
-    </button>
+    <Component className={`${styles['job-select-button']} ${styles[color]}`} {...rest}>
+      { children }
+    </Component>
   );
 };
 
-// 여기 propTypes는 생략해도 됨
 JobSelectButton.propTypes = {
+  as: PropTypes.oneOf(['link', 'a', 'button']),
+  color: PropTypes.oneOf(['steelblue', 'green', 'blue', 'yellow', 'red']),
   children: PropTypes.node.isRequired,
 };
 

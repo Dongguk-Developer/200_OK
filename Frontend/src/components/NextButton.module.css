@@ -1,20 +1,43 @@
+.next-button.gray {
+  --background-color: var(--gray-400);
+  --active-background-color: var(--gray-600);
+}
+.next-button.green {
+  --background-color: var(--green-500);
+  --active-background-color: var(--green-700);
+}
+.next-button.blue {
+  --background-color: var(--blue-500);
+  --active-background-color: var(--blue-700);
+}
+.next-button.yellow {
+  --background-color: var(--yellow-500);
+  --active-background-color: var(--yellow-700);
+}
+.next-button.red {
+  --background-color: var(--red-500);
+  --active-background-color: var(--red-700);
+}
+
 .next-button {
-    display: flex;
-    width: 50%;
-    height: 100px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin: ; */
-    /* flex-shrink: 0; */
-    
-    border-radius: var(--md, 12px);
-    border: 2px solid var(--gray-200);
-    background: var(--gray-100);
-    transition: background-color 0.2s ease-in-out;
-  }
-  
-  .next-button.steelblue {
-    background: var(--steelblue-100);
-    border: 2px solid var(--steelblue-200);
-  }
+  --background-color: var(--steelblue-500);
+  --active-background-color: var(--steelblue-700);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 53px;
+  border-radius: var(--radius-lg);
+  border: none;
+  background: var(--background-color);
+  transition: background-color 0.2s ease-in-out;
+  color: white;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  user-select: none;
+}
+.next-button:active {
+  transition: none;
+  background: var(--active-background-color);
+}

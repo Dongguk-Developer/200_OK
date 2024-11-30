@@ -1,0 +1,21 @@
+.input-age {
+  width: 100%;
+  height: 56px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+
+  font-size: var(--font-size-md, 16px);
+
+  outline: none;
+  border-radius: var(--md, 12px);
+  border: 1px solid var(--gray-200, #c8cdd2);
+}
+
+.input-age::placeholder {
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+}

@@ -1,17 +1,31 @@
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import styles from './NextButton.module.css';
 
-const NextButton = ({ children, color = '', ...rest }) => {
+const NextButton = ({ as,  children, color = '', ...rest }) => {
+  let Component;
+
+  if (as === 'link') Component = Link;
+  else if (as === 'a') Component = 'a';
+  else Component = 'button';
+
   return (
-    <button className={`${styles['next-button']} ${styles[color]}`} {...rest}>
+    <Component
+      className={`
+        ${styles['next-button']}
+        ${styles[color]}
+      `}
+      {...rest}
+    >
       {children}
-    </button>
+    </Component>
   );
 };
 
-// 여기 propTypes는 생략해도 됨
 NextButton.propTypes = {
+  as: PropTypes.oneOf(['link', 'a', 'button']),
   children: PropTypes.node.isRequired,
+  color: PropTypes.oneOf(['steelblue', 'green', 'blue', 'yellow', 'red']),
 };
 
 export default NextButton;
