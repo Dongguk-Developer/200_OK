@@ -1,0 +1,52 @@
+.mcq-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 410px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: white;
+  user-select: none;
+  box-sizing: border-box;
+  word-break: keep-all;
+  line-height: normal;
+}
+
+.mcq-card h1 {
+  color: var(--gray-900);
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  margin-bottom: var(--spacing-sm);
+}
+
+.mcq-card span {
+  display: block;
+  margin-bottom: var(--spacing-lg);
+  font-size: var(--font-size-md);
+}
+
+.mcq-card .answer {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
+}
+
+.mcq-card .answer input[type='radio'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 1px 1px 1px 0;
+  border: 2.5px solid var(--gray-200);
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+.mcq-card .answer input[type='radio']:checked {
+  background-color: var(--steelblue-500);
+  border: none;
+}

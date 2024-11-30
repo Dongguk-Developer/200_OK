@@ -1,0 +1,45 @@
+.suggest-button.gray {
+  --background-color: var(--gray-400);
+  --active-background-color: var(--gray-600);
+}
+.suggest-button.green {
+  --background-color: var(--green-500);
+  --active-background-color: var(--green-700);
+}
+.suggest-button.blue {
+  --background-color: var(--blue-500);
+  --active-background-color: var(--blue-700);
+}
+.suggest-button.yellow {
+  --background-color: var(--yellow-500);
+  --active-background-color: var(--yellow-700);
+}
+.suggest-button.red {
+  --background-color: var(--red-500);
+  --active-background-color: var(--red-700);
+}
+
+.suggest-button {
+  --background-color: var(--steelblue-500);
+  --active-background-color: var(--steelblue-700);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  line-height: var(--font-size-2xl);
+  padding: var(--spacing-xs) var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  border: none;
+  background: var(--background-color);
+  transition: background-color 0.2s ease-in-out;
+  color: white;
+  font-size: var(--font-size-md);
+  cursor: pointer;
+  user-select: none;
+}
+.suggest-button:active {
+  transition: none;
+  background: var(--active-background-color);
+}

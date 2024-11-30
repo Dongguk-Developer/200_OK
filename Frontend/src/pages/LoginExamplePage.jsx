@@ -2,9 +2,13 @@ import { Link } from 'react-router-dom';
 import KakaoLogin from 'react-kakao-login';
 import styles from './LoginExamplePage.module.css';
 import useKaKaoLogin from '../hooks/useKaKaoLogin';
+import useSignInSubmit from '../hooks/useSignInSubmit';
 
 const LoginExamplePage = () => {
-  const { kakaoClientId, kakaoOnSuccess, kakaoOnFailure, kakaoOnLogout } = useKaKaoLogin();
+  const { handleSignInSubmit } = useSignInSubmit();
+  const { kakaoClientId, kakaoOnSuccess, kakaoOnFailure, kakaoOnLogout } = useKaKaoLogin({
+    handleSignInSubmit,
+  });
 
   return (
     <div className={styles['login-example-page']}>

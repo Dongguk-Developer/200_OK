@@ -1,0 +1,35 @@
+.good-bad-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 410px;
+  padding: 16px;
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-md);
+  overflow: hidden;
+  background: white;
+  user-select: none;
+  box-sizing: border-box;
+  word-break: keep-all;
+  line-height: normal;
+}
+
+.good-bad-card h1 {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+}
+
+.good-bad-card .contents-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.good-bad-card .svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-sm);
+  margin: auto;
+}

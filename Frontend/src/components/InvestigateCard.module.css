@@ -1,0 +1,47 @@
+.investigate-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 410px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  user-select: none;
+  background-color: white;
+  padding: 16px;
+  box-sizing: border-box;
+  line-height: normal;
+  color: var(--gray-900);
+  gap: 10px;
+}
+
+.investigate-card h1 {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  word-break: keep-all;
+  margin-bottom: var(--spacing-xs);
+}
+
+.investigate-card span {
+  display: block;
+  font-size: var(--font-size-xs);
+  word-break: keep-all;
+}
+
+.investigate-card .input-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  width: calc(100% + (16px * 2));
+  transform: translateX(-16px);
+  background-color: var(--steelblue-100);
+}
+
+.investigate-card .input-wrapper textarea {
+  width: 100%;
+  margin: 8px 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: var(--steelblue-100);
+}

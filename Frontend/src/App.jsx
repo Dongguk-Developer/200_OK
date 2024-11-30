@@ -4,6 +4,7 @@ import ExamplePage from './pages/ExamplePage.jsx';
 import LoginExamplePage from './pages/LoginExamplePage.jsx';
 import CardsExamplePage from './pages/CardsExamplePage.jsx';
 import TestPage from './pages/TestPage.jsx';
+import SignupPage from './pages/SignupPage.jsx';
 
 const linkStyle = {
   // 예제를 위한 임의의 CSS
@@ -39,6 +40,7 @@ function App() {
       <Route path="/login-example" element={<LoginExamplePage />} />
       <Route path="/cards-example" element={<CardsExamplePage />} />
       <Route path="/test" element={<TestPage />} />
+      <Route path="/signup" element={<SignupPage />} />
     </Routes>
   );
 }

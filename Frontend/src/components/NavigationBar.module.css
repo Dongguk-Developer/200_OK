@@ -1,0 +1,32 @@
+.navigation-bar {
+  width: auto;
+  padding: 14px;
+  /* 디버깅용으로 추가 */
+  /* background-color: burlywood; */
+  /* border: solid 1px white; */
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-around;
+  /* gap: 86px; */
+}
+
+.title {
+  color: white;
+  font-size: var(--font-size-s);
+}
+
+.svg {
+  width: 24px;
+}

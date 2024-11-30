@@ -1,0 +1,28 @@
+.swipe-description {
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  /* 테스트할 떄 안 보여서 넣음 */
+  border: solid 1px white;
+  background-color: white;
+}
+
+.couple {
+  width: fit-content;
+  display: flex;
+  gap: 12px;
+}
+.arrow {
+  width: 10px;
+}
+
+.emote {
+  width: 20px;
+}
+
+.text {
+  color: var(--grey-800);
+  font-size: var(--font-size-s);
+}
