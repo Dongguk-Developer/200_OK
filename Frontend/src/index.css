@@ -1,4 +1,97 @@
 :root {
+  
+/* Primitive Colors */
+--steelblue-900: #1D2433;
+--steelblue-800: #2A3450;
+--steelblue-700: #35426C;
+--steelblue-600: #455487;
+--steelblue-500:#5564AE;
+--steelblue-400: #6E7BBE;
+--steelblue-300: #8B97CF;
+--steelblue-200: #AAB6E2;
+--steelblue-100: #E1E9F5;
+--black: #000000;
+--gray-900: #313236;
+--gray-800: #3E4048;
+--gray-700: #4E5058;
+--gray-600: #60626A;
+--gray-500: #74767F;
+--gray-400: #8C8F96;
+--gray-300: #A6A9AE;
+--gray-200: #C8CDD2;
+--gray-100: #F8F9FA;
+--white: #FFFFFF;
+
+--green-900: #1E4E3E;
+--green-800: #276650;
+--green-700: #328363;
+--green-600: #449877;
+--green-500: #61C29C;
+--green-400: #7AD6B1;
+--green-300: #9AEBD0;
+--green-200: #BBF3E2;
+--green-100: #F1FCF6;
+
+--blue-900: #123B6D;
+--blue-800: #1A5191;
+--blue-700: #1F68B3;
+--blue-600: #2175CD;
+--blue-500: #258AE1;
+--blue-400: #4A9CEB;
+--blue-300: #70B2F3;
+--blue-200: #9BCFF8;
+--blue-100: #E2F4FD;
+
+--yellow-900: #4F3E00;
+--yellow-800: #6B5300;
+--yellow-700: #876800;
+--yellow-600: #A17C00;
+--yellow-500: #D4A600;
+--yellow-400: #E8C22E;
+--yellow-300: #F1D456;
+--yellow-200: #F1D456;
+--yellow-100: #FFF8D4;
+
+--red-900: #491A1E;
+--red-800: #5F2229;
+--red-700: #5F2229;
+--red-600: #973640;
+--red-500: #D04550;
+--red-400: #E06471;
+--red-300: #EB8C96;
+--red-200: #F4B9BE;
+--red-100: #FDE9EA;
+
+/* Typography Size */
+--font-size-2xs: 10px;
+--font-size-xs: 12px;
+--font-size-s: 14px;
+--font-size-md: 16px;
+--font-size-lg: 18px;
+--font-size-xl: 24px;
+--font-size-2xl: 32px;
+--font-size-3xl: 40px;
+
+  /* Spacing */
+  --spacing-3xs: 2px;
+  --spacing-2xs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+  --spacing-3xl: 64px;
+
+  /* Radius */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
   font-synthesis: none;

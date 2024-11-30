@@ -3,6 +3,7 @@ import './App.css';
 import ExamplePage from './pages/ExamplePage.jsx';
 import LoginExamplePage from './pages/LoginExamplePage.jsx';
 import CardsExamplePage from './pages/CardsExamplePage.jsx';
+import TestPage from './pages/TestPage.jsx';
 
 const linkStyle = {
   // 예제를 위한 임의의 CSS
@@ -28,12 +29,16 @@ function App() {
             <Link to="/cards-example" style={linkStyle}>
               카드들 예제 페이지 보기
             </Link>
+            <Link to="/test" style={linkStyle}>
+              테스트 페이지
+            </Link>
           </>
         }
       />
       <Route path="/example" element={<ExamplePage />} />
       <Route path="/login-example" element={<LoginExamplePage />} />
       <Route path="/cards-example" element={<CardsExamplePage />} />
+      <Route path="/test" element={<TestPage />} />
     </Routes>
   );
 }

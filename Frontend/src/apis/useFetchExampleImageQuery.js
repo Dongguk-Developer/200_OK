@@ -2,6 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 
 const fetchPlaceholderImage = async () => {
   const response = await fetch('https://jsonplaceholder.typicode.com/photos/1');
+
   if (!response.ok) {
     throw new Error('Failed to fetch image');
   }

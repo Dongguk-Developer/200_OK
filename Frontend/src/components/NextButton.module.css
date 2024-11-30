@@ -1,0 +1,20 @@
+.next-button {
+    display: flex;
+    width: 50%;
+    height: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: ; */
+    /* flex-shrink: 0; */
+    
+    border-radius: var(--md, 12px);
+    border: 2px solid var(--gray-200);
+    background: var(--gray-100);
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .next-button.steelblue {
+    background: var(--steelblue-100);
+    border: 2px solid var(--steelblue-200);
+  }

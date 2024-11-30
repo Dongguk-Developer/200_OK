@@ -1,0 +1,21 @@
+.test-page {
+  /* width: 100vw; */
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+  padding: 16px;
+}
+
+.button-couple {
+  max-width: 361px;
+  gap: 12px;
+  
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  justify-content: center;
+}
