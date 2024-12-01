@@ -38,7 +38,8 @@
 
 ---
 ## 서비스 아키텍처
-![서비스 아키텍처](https://github.com/user-attachments/assets/7361edf0-464e-4a51-8963-6b5d794baf0c")
+<img width="588" alt="스크린샷 2024-12-01 오전 10 24 33" src="https://github.com/user-attachments/assets/a1fa2be2-e851-4cf5-ad73-22e5e7b1ac4a">
+
 
 ---
 ## 사용 기술
@@ -53,7 +54,7 @@
 ## 팀원 소개
 | **팀원 이름**            | **역할** | 
 |----------------------|----------|
-| 팀장(Leader) 최민수, | Backend, Frontend | 
+| 팀장(Leader) 최민수 | Backend, Frontend | 
 | 정성훈 | Backend |
 | 임덕윤 | Frontend |
 | 김광래 | Frontend |
