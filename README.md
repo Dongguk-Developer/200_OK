@@ -49,7 +49,6 @@
 |----------------------|-------------|
 | **Frontend**         | React        |
 | **Backend**          | Spring Boot, MySQL, Redis |
-| **devops**           | localhost   |
 | **Others**           | Github, Notion, Figma |
 
 ---
