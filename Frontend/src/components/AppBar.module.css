@@ -1,0 +1,12 @@
+.a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  width: auto;
+  height: fit-content;
+  padding: 20px;
+  color: white;
+  font-size: x-large;
+  background-color: var(--blue-600);
+}

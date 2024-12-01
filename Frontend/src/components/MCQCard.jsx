@@ -2,7 +2,17 @@ import PropTypes from 'prop-types';
 import styles from './MCQCard.module.css';
 import NextButton from './NextButton';
 
-const MCQCard = ({ children, title, answers = [] }) => {
+const MCQCard = ({
+  children,
+  title,
+  answers = [
+    '매우 만족합니다',
+    '만족합니다',
+    '보통입니다',
+    '불만족스럽습니다',
+    '매우 불만족스럽습니다',
+  ],
+}) => {
   return (
     <div className={styles['mcq-card']}>
       <div className={styles['contents-container']}>

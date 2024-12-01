@@ -10,10 +10,17 @@ import SwipeDescription from '../components/SwipeDescription';
 import GoodBadCard from '../components/GoodBadCard';
 import CompleteCard from '../components/CompleteCard';
 import NavigationBar from '../components/NavigationBar';
+import DetailCard from '../components/DetailCard';
+import AppBar from '../components/AppBar';
 
 const TestPage = () => {
   return (
     <div className={styles['test-page']}>
+      <AppBar />
+      <DetailCard
+        title="경주 내 대학생 장학 지원 사업 대상자 모집"
+        uploaded="2024년 04월 27일"
+      ></DetailCard>
       <NavigationBar />
       <SwipeDescription labelText="쓸어넘겨 반응하기"></SwipeDescription>
       <ProgressBar percentage={20} />

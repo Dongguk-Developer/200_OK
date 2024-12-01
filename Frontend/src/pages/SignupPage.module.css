@@ -1,0 +1,24 @@
+.signup-page {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.signup-page h1 {
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.signup-page .container {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}

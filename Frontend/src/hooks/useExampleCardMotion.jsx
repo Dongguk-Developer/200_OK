@@ -12,6 +12,8 @@ const useExampleCardMotion = () => {
   const [cards, setCards] = useState([1, 2, 3, 4, 5]);
   const [focusedIndex, setFocusedIndex] = useState(0);
   const [dragStartDirection, setDragStartDirection] = useState(null);
+  const [showThumbsUp, setShowThumbsUp] = useState(false);
+  const [showThumbsDown, setShowThumbsDown] = useState(false);
   const y = useMotionValue(0);
   const x = useMotionValue(0);
 
@@ -35,12 +37,31 @@ const useExampleCardMotion = () => {
     );
   };
 
-  const handleDrag = () => (dragStartDirection === 'horizontal' ? y.set(0) : x.set(0));
+  const handleDrag = () => {
+    if (dragStartDirection === 'horizontal') {
+      y.set(0);
+      const xValue = x.get();
+      setShowThumbsUp(xValue > 20);
+      setShowThumbsDown(xValue < -20);
+    } else {
+      x.set(0);
+    }
+  };
 
   const handleDragEnd = (_event, info) => {
     if (dragStartDirection === 'horizontal') {
-      Math.abs(info.offset.x) > animationConfig.swipeThreshold.offset &&
-        console.log(info.offset.x > 0 ? '오른쪽으로 스와이프' : '왼쪽으로 스와이프');
+      const threshold = animationConfig.swipeThreshold.offset;
+      if (Math.abs(info.offset.x) > threshold) {
+        if (info.offset.x > 0) {
+          console.log('오른쪽으로 스와이프 - 따봉!');
+          setShowThumbsUp(true);
+          setTimeout(() => setShowThumbsUp(false), 1000);
+        } else {
+          console.log('왼쪽으로 스와이프 - 싫어요!');
+          setShowThumbsDown(true);
+          setTimeout(() => setShowThumbsDown(false), 1000);
+        }
+      }
     }
 
     if (dragStartDirection === 'vertical') {
@@ -100,6 +121,8 @@ const useExampleCardMotion = () => {
     focusedIndex,
     getCardMotionProps,
     shouldRenderCard,
+    showThumbsUp,
+    showThumbsDown,
   };
 };
 

@@ -1,0 +1,23 @@
+.topBar {
+  width: 100%;
+  height: 56px;
+  background-color: rgb(85, 100, 174);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.content {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}

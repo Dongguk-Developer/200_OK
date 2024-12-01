@@ -1,0 +1,99 @@
+.page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-100);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.main {
+  flex: 1;
+  padding: 24px 16px 84px 16px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  margin-top: 48px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.description {
+  font-size: var(--font-size-md);
+  color: var(--gray-600);
+  margin: -16px 0 0 0;
+}
+
+.inputGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.titleInput {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-md);
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.titleInput:focus {
+  border-color: var(--steelblue-500);
+}
+
+.titleInput:disabled {
+  background: var(--gray-50);
+  color: var(--gray-500);
+  cursor: not-allowed;
+}
+
+.contentInput {
+  width: 100%;
+  height: 300px;
+  padding: 16px;
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-md);
+  background: white;
+  resize: none;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.contentInput:focus {
+  border-color: var(--steelblue-500);
+}
+
+.contentInput:disabled {
+  background: var(--gray-50);
+  color: var(--gray-500);
+  cursor: not-allowed;
+}

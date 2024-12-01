@@ -27,7 +27,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 53px;
+  height: fit-content;
+  line-height: var(--font-size-2xl);
+  padding: var(--spacing-xs) var(--spacing-lg);
   border-radius: var(--radius-lg);
   border: none;
   background: var(--background-color);
@@ -37,7 +39,17 @@
   cursor: pointer;
   user-select: none;
 }
+
 .next-button:active {
   transition: none;
   background: var(--active-background-color);
+}
+
+.next-button.submitted {
+  background-color: var(--gray-400);
+  cursor: not-allowed;
+}
+
+.next-button.submitted:active {
+  background-color: var(--gray-400);
 }
