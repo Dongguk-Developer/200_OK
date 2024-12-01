@@ -1,0 +1,28 @@
+.login-example-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.login-example-page h1 {
+  font-size: 124px;
+  color: rebeccapurple;
+}
+
+.login-example-page .kakao-login-button {
+  background: rgb(255 229 2) !important;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.login-example-page .kakao-login-button:hover {
+  background: rgb(251 219 11) !important;
+}
+.login-example-page .kakao-login-button:active {
+  background: rgb(242 208 12) !important;
+  transition: none;
+}

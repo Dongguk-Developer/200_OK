@@ -1,0 +1,19 @@
+.example-button {
+  padding: 18px;
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  border-radius: 99999px;
+  user-select: none;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.example-button:hover {
+  cursor: pointer;
+  background-color: rgb(135, 68, 202);
+}
+
+.example-button:active {
+  background-color: rgb(85, 43, 128);
+  transition: none;
+}
