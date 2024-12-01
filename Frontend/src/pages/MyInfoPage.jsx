@@ -30,7 +30,7 @@ const gyeongjuPolicies = [
   '청년 친환경 이동수단 지원',
   '청년 심리상담 지원 프로그램',
   '청년 디지털 역량 강화 사업',
-  '청년 정책 참여단 운영'
+  '청년 정책 참여단 운영',
 ];
 
 const gyeongjuPolicyDetails = [
@@ -53,7 +53,7 @@ const gyeongjuPolicyDetails = [
   '자전거, 전동킥보드 등 친환경 이동수단 구매를 지원합니다.',
   '청년들의 정신건강을 위한 전문 상담과 치료를 지원합니다.',
   '청년들의 디지털 역량 강화를 위한 교육과 자격증 취득을 지원합니다.',
-  '청년들이 직접 정책을 제안하고 평가하는 참여형 프로그램입니다.'
+  '청년들이 직접 정책을 제안하고 평가하는 참여형 프로그램입니다.',
 ];
 
 const Card = ({ card, index, focusedIndex, getCardMotionProps, shouldRenderCard }) => {
@@ -68,7 +68,9 @@ const Card = ({ card, index, focusedIndex, getCardMotionProps, shouldRenderCard 
       className={`${styles.card} ${isFocused ? styles.focused : ''}`}
       {...motionProps}
     >
-      <InfoCard title={gyeongjuPolicies[index % 20]}>{gyeongjuPolicyDetails[index % 20]}</InfoCard>
+      <InfoCard title={gyeongjuPolicies[index % 20]} index={index + 1}>
+        {gyeongjuPolicyDetails[index % 20]}
+      </InfoCard>
     </motion.div>
   );
 };

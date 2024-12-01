@@ -1,11 +1,17 @@
 import PropTypes from 'prop-types';
 import styles from './InfoCard.module.css';
 
-const InfoCard = ({ children, title, labelText = '대학생', labelColor = 'steelblue' }) => {
+const InfoCard = ({
+  children,
+  title,
+  labelText = '대학생',
+  labelColor = 'steelblue',
+  index = 1,
+}) => {
   return (
     <div className={styles['info-card']}>
       <div className={styles['thumbnail']}>
-        <img src="https://picsum.photos/200/300" alt="" />
+        <img src={`https://picsum.photos/id/${index}/200/300`} alt="" />
         <div className={styles['gradation']} />
         <div className={styles['content-overlay']}>
           <div className={`${styles['label']} ${styles[labelColor]}`}>

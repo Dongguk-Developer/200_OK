@@ -9,19 +9,31 @@ const NavigationBar = () => {
       <div className={styles['row']}>
         <div className={styles['column']} onClick={() => navigate('/feedback')}>
           <div className={styles['navIcon']}>
-            <img className={styles['svg']} src="../../public/icons/icon_nav_fdbck.svg" alt="피드백" />
+            <img
+              className={styles['svg']}
+              src="../../public/icons/icon_nav_fdbck.svg"
+              alt="피드백"
+            />
           </div>
           <div className={styles['navText']}>피드백</div>
         </div>
         <div className={styles['column']} onClick={() => navigate('/info-page')}>
           <div className={styles['navIcon']}>
-            <img className={styles['svg']} src="../../public/icons/icon_nav_info.svg" alt="마이인포" />
+            <img
+              className={styles['svg']}
+              src="../../public/icons/icon_nav_info.svg"
+              alt="마이인포"
+            />
           </div>
-          <div className={styles['navText']}>내 정보</div>
+          <div className={styles['navText']}>마이 정보</div>
         </div>
         <div className={styles['column']} onClick={() => navigate('/suggest-page')}>
           <div className={styles['navIcon']}>
-            <img className={styles['svg']} src="../../public/icons/icon_nav_suggest.svg" alt="제안하기" />
+            <img
+              className={styles['svg']}
+              src="../../public/icons/icon_nav_suggest.svg"
+              alt="제안하기"
+            />
           </div>
           <div className={styles['navText']}>제안하기</div>
         </div>
